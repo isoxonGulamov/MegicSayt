@@ -1,38 +1,371 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.Megic_Box{
+  display: flex; 
+}
+.vegatables__box{
+  padding: 77px;
+height: 441px;
+background: #F5F5F5;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.veget__title{
+  width: 324px;
+height: 72px;
+  font-family: 'Cerebri Sans Pro';
+font-weight: 900;
+font-size: 50px;
+line-height: 50px;
+
+color: #2A2A2A
+}
+.About__Box{
+  border-radius: 24px;
+padding-top: 70px;
+  max-width: 1000px;
+  height: 560px;
   text-align: center;
+  margin: 0 auto;
+  background-color: #2A2A2A;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contact_title{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: #2A2A2A;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Contact__Box{
+  padding: 140px;
+background-color: antiquewhite;
+border-radius: 30px;
+cursor: pointer;
+transition-property: all;
+transition-duration: 1s;
 }
+.Contact__Box:hover{
+  background-color: aqua;
+  transition-duration: 1s;
+}
+.contact_span{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 33px;
+  color: #50B9D8;
+}
+.About__title{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  color: bisque;
+  box-shadow: 10px 10px 4px 3px;
+}
+.veget__text{
+  margin-top: 40px;
+  font-family: 'Cerebri Sans Pro';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+color: #999999;
+}
+.veget__img{
+  width: 520px;
+  height: 350px;
+  border-radius: 20px;
+}
+.vegatables__img{
+  margin-left: 30px;
+}
+.veget__img {
+  --s: 250px;   /* the size of the image */
+  --b: 15px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #4ECDC4; /* the color */
+  
+
+  aspect-ratio: 1;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+.veget__img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+}
+.CartBox{
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.ProducCart{
+  border-radius: 20px;
+  max-width: 350px;
+  height: 580px;
+  margin-top: 40px;
+  padding: 30px 18px;
+  transition-property: all;
+  transition-duration: 0.8s;
+  background-color: rgb(248 113 113);
+  cursor: pointer;
+}
+
+.ProducCart:hover{
+  transition-duration: 1s;
+ border-radius: 20px;
+  box-shadow: 20px 10px 100px 10px;
+color: blue;
+
+
+}
+.producImg{
+  width: 320px;
+  height: 300px;
+  margin: 0 auto;
+}
+.produc-title{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 35px;
+}
+.produc-price{
+  color: burlywood;
+  box-shadow: 10px 10px 13px 5px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin-bottom: 25px;
+}
+.produc__baho{
+  font-size: 22px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkblue;
+
+}
+/*  */
+.BuyCart{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+margin-top: 50px;
+}
+.BuyCart__Img{
+  max-width: 400px;
+  height: 400px;
+  border-radius: 25px;
+}
+.BuyCart__title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+  color: cadetblue;
+}
+.BuyCart__baho{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+.BuyCart__content{
+width: 400px;
+}
+.Icrement{
+  font-family: cursive;
+  font-size: 24px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.price{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 31px;
+  color: darkkhaki;
+}
+.delete{
+  margin-top: 23px;
+}
+.total{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  color: indigo;
+}
+.hero__bottom-img{
+  width: 240px;
+height: 176px;
+margin: 0 auto;
+text-align: center;
+}
+
+.hero__bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.glassBox {
+  cursor: pointer;
+  width: 100%;
+  height: 300px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background-color: #50B9D8;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.glassBox, .glassBox * {
+  box-sizing: border-box;
+  transition: 400ms;
 }
+.glassBox__imgBox img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+.glassBox__title {
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(101, 76, 76);
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Cerebri Sans Pro';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  color: #2A2A2A;
+  background-color: #50B9D8;
+  cursor: pointer;
+}
+.glassBox__content {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+.glassBox:hover .glassBox__imgBox {
+  transform: translateY(-50px);
+}
+.glassBox:hover .glassBox__imgBox img {
+  transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+.Corusel{
+  margin-top: 100px;
+}
+.d-block{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ height: 600px;
+}
+.carousel-control-next-icon{
+  background-color: blue;
+}
+.carousel-control-prev-icon{
+  background-color: blue;
+}
+.Natural{
+  margin-top: 56px;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.Natural__1{
+  background-image: url(./img/a1.png);
+  background-repeat: no-repeat;
+width: 600px;
+  height: 400px;
+}
+.Natural__2{
+  background-image: url(./img/a2.png);
+  background-repeat: no-repeat;
+  width: 560px;
+  height: 400px;
+}
+.Natural__title{
+  width: 250px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: normal;
+font-weight: 900;
+font-size: 38px;
+line-height: 34px;
+display: flex;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+.Natural__text{
+
+  margin-top: 10px;
+  font-family: 'Cerebri Sans Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 24px;
+display: flex;
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+}
+.Natural__content{
+  padding: 66px 23px 146px 290px;
+}
+.Card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.Total__Box{
+  padding: 25px 30px;
+  max-width: 600px;
+  justify-content: space-between;
+  margin: 0 auto;
+  background-color: #4ECDC4;
+}
+.total__title{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+color: aquamarine;
+}
+.sp{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 35px;
+  color: aqua;
+}
+.gif{
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 400px;
 }
